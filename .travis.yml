@@ -1,0 +1,6 @@
+script:
+  - shopt -s expand_aliases
+  - mkdir -p ~/workspace
+  - cp checkout.sh ~/workspace/
+  - cd ~/workspace/ && ./checkout.sh --yes
+  - source ~/workspace/bash/master/bash_only/bashrc.sh && repo_clone_bash --yes
