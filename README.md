@@ -21,4 +21,4 @@ checkout additionals repositories (e.g. robolib)
 
 see also [help_config_workspace.sh](scripts/help_config_workspace.sh).
 
-[![Build Status](https://travis-ci.org/PeterWeissig/bash_master.svg?branch=master)](https://travis-ci.org/PeterWeissig/bash_master)
+[![Build Status](https://travis-ci.org/peterweissig/bash_master.svg?branch=master)](https://travis-ci.org/peterweissig/bash_master)
