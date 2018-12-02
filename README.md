@@ -19,6 +19,5 @@ checkout additionals repositories (e.g. robolib)
     repo_clone_bash
     repo_help #list of all referenced repositories
 
-see also [help_config_workspace.sh](scripts/help_config_workspace.sh).
-
+## build state
 [![Build Status](https://travis-ci.org/peterweissig/bash_master.svg?branch=master)](https://travis-ci.org/peterweissig/bash_master)
