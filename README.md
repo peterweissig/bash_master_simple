@@ -1,4 +1,4 @@
-# bash_roboag
+# bash_master_simple
 Simple master scripts for collection of daily scripts.
 
 ## Setup for linux (Ubuntu)

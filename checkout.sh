@@ -10,7 +10,7 @@
 # Author : Peter Weissig                                                      #
 #                                                                             #
 # For help or bug report please visit:                                        #
-#   https://github.com/peterweissig/bash_master/                              #
+#   https://github.com/peterweissig/bash_master_simple/                       #
 ###############################################################################
 
 NAME_THIS="bash_master_simple"
