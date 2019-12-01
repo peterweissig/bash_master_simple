@@ -5,7 +5,7 @@
 # checkout.sh                                                                 #
 # ===========                                                                 #
 #                                                                             #
-# Version: 1.1.0                                                              #
+# Version: 1.1.1                                                              #
 # Date   : 01.12.19                                                           #
 # Author : Peter Weissig                                                      #
 #                                                                             #
@@ -18,7 +18,7 @@ NAME_ADD="bash_repo"
 
 ###############################################################################
 PATH_THIS="bash/master/bash_only/"
-PATH_ADD="bash/${NAME_ADD}/"
+PATH_ADD="bash/repo/"
 
 URL_GIT_THIS="https://github.com/peterweissig/${NAME_THIS}.git"
 URL_GIT_ADD="https://github.com/peterweissig/${NAME_ADD}.git"
