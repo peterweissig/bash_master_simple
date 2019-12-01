@@ -10,14 +10,14 @@ create workspace directory
 
 download scripts
 
-    wget -nv https://raw.githubusercontent.com/PeterWeissig/bash_master/master/checkout.sh
+    wget -nv https://raw.githubusercontent.com/PeterWeissig/bash_master_simple/master/checkout.sh
     bash ./checkout.sh
 
 
-checkout additionals repositories (e.g. robolib)
+checkout additionals repositories (e.g. common bash scripts)
 
     repo_clone_bash
     repo_help #list of all referenced repositories
 
 ## build state
-[![Build Status](https://travis-ci.org/peterweissig/bash_master.svg?branch=master)](https://travis-ci.org/peterweissig/bash_master)
+[![Build Status](https://travis-ci.org/peterweissig/bash_master_simple.svg?branch=master)](https://travis-ci.org/peterweissig/bash_master_simple)

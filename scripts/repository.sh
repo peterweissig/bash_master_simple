@@ -14,7 +14,7 @@ export REPO_ROOT_GITHUB_URL="https://github.com/peterweissig/"
 
 
 #***************************[bash]********************************************
-# 2018 11 30
+# 2019 12 01
 
 # paths
 # note: this is already set in file bash/repo/list.sh
@@ -33,15 +33,15 @@ alias git_status_bash_repo="_repo_git_st \"${REPO_BASH_REPO[0]}\""
 # main scripts
 # note: this is already set in file bash/repo/list.sh
 export REPO_BASH_MASTER_BASHONLY=("${REPO_BASH_MASTER_PATH}bash_only/" \
-  "${REPO_ROOT_GITHUB_URL}bash_master.git")
+  "${REPO_ROOT_GITHUB_URL}bash_master_simple.git")
 
-alias git_clone_bash_master="_repo_git_clone \
+alias git_clone_bash_master_simple="_repo_git_clone \
   ${REPO_BASH_MASTER_BASHONLY[*]}"
-alias git_pull_bash_master="_repo_git_pull \
+alias git_pull_bash_master_simple="_repo_git_pull \
   \"${REPO_BASH_MASTER_BASHONLY[0]}\""
-alias git_push_bash_master="_repo_git_push \
+alias git_push_bash_master_simple="_repo_git_push \
   \"${REPO_BASH_MASTER_BASHONLY[0]}\""
-alias git_status_bash_master="_repo_git_st \
+alias git_status_bash_master_simple="_repo_git_st \
   \"${REPO_BASH_MASTER_BASHONLY[0]}\""
 
 

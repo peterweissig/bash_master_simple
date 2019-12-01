@@ -5,25 +5,23 @@
 # checkout.sh                                                                 #
 # ===========                                                                 #
 #                                                                             #
-# Version: 1.0.0                                                              #
-# Date   : 30.11.18                                                           #
+# Version: 1.1.0                                                              #
+# Date   : 01.12.19                                                           #
 # Author : Peter Weissig                                                      #
 #                                                                             #
 # For help or bug report please visit:                                        #
 #   https://github.com/peterweissig/bash_master/                              #
 ###############################################################################
 
-NAME_THIS="master"
-NAME_ADD="repo"
+NAME_THIS="bash_master_simple"
+NAME_ADD="bash_repo"
 
 ###############################################################################
 PATH_THIS="bash/master/bash_only/"
 PATH_ADD="bash/${NAME_ADD}/"
-NAME_GIT_THIS="bash_${NAME_THIS}"
-NAME_GIT_ADD="bash_${NAME_ADD}"
 
-URL_GIT_THIS="https://github.com/peterweissig/${NAME_GIT_THIS}.git"
-URL_GIT_ADD="https://github.com/peterweissig/${NAME_GIT_ADD}.git"
+URL_GIT_THIS="https://github.com/peterweissig/${NAME_THIS}.git"
+URL_GIT_ADD="https://github.com/peterweissig/${NAME_ADD}.git"
 
 NAME_CHECKOUT_SCRIPT="checkout.sh"
 
@@ -44,7 +42,7 @@ if [ "${MASTER_PATH_WORKSPACE}" != "${MASTER_PATH_HOME}workspace/" ]; then
     echo ""
     echo "This script must be placed at the top-level of the working "
     echo -n "directory - usually \"~/workspace/\" - not in "
-    echo "\"bash/\" or \"bash/roboag/\"!"
+    echo "\"bash/\" or \"bash/master/\"!"
     echo ""
 
     echo "Do you wish to continue ? (No/yes)"
