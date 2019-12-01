@@ -19,6 +19,7 @@ export REPO_ROOT_GITHUB_URL="https://github.com/peterweissig/"
 # paths
 # note: this is already set in file bash/repo/list.sh
 export REPO_BASH_PATH="${MASTER_PATH_WORKSPACE}bash/"
+export REPO_BASH_MASTER_PATH="${REPO_BASH_PATH}master/"
 
 # repos
 # note: this is already set in file bash/repo/list.sh
