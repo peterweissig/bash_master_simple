@@ -2,6 +2,10 @@
 Simple master scripts for collection of daily scripts.
 
 ## Setup for linux (Ubuntu)
+install git client
+
+    sudo apt install git
+
 create workspace directory
 
     mkdir -p ~/workspace
