@@ -19,11 +19,10 @@ export SOURCED_BASH_MASTER_BASHONLY="$SOURCED_BASH_LAST"
 
 
 #***************************[paths and files]*********************************
-# 2018 11 30
+# 2020 12 27
 
-export MASTER_PATH_SCRIPT="$(cd "$(dirname "${BASH_SOURCE}")" && pwd )/"
-export MASTER_PATH_WORKSPACE="$(cd "${MASTER_PATH_SCRIPT}../../../" && \
-  pwd )/"
+export MASTER_PATH_SCRIPT="$(realpath "$(dirname "${BASH_SOURCE}")" )/"
+export MASTER_PATH_WORKSPACE="$(realpath "${MASTER_PATH_SCRIPT}../../.." )/"
 
 
 #***************************[repository]**************************************

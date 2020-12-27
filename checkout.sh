@@ -33,8 +33,8 @@ echo ""
 
 
 # export paths
-export MASTER_PATH_WORKSPACE="$(cd "$(dirname "${BASH_SOURCE}")" && pwd )/"
-export MASTER_PATH_HOME="$(cd && pwd )/"
+export MASTER_PATH_WORKSPACE="$(realpath "$(dirname "${BASH_SOURCE}")" )/"
+export MASTER_PATH_HOME="$(cd && realpath . )/"
 
 
 # check paths
