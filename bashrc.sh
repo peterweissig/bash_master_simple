@@ -18,11 +18,13 @@ fi
 export SOURCED_BASH_MASTER_BASHONLY="$SOURCED_BASH_LAST"
 
 
+
 #***************************[paths and files]*********************************
 # 2020 12 27
 
 export MASTER_PATH_SCRIPT="$(realpath "$(dirname "${BASH_SOURCE}")" )/"
 export MASTER_PATH_WORKSPACE="$(realpath "${MASTER_PATH_SCRIPT}../../.." )/"
+
 
 
 #***************************[repository]**************************************
@@ -36,12 +38,14 @@ if [ -d "${REPO_BASH_REPO[0]}" ]; then
 fi
 
 
+
 #***************************[config]******************************************
 # 2018 11 30
 
 if [ -d "${REPO_BASH_CONFIG[0]}" ]; then
     . ${REPO_BASH_CONFIG[0]}bashrc.sh
 fi
+
 
 
 #***************************[network]*****************************************
@@ -53,6 +57,7 @@ if [ "${REPO_BASH_NETWORK[0]}" != "" ] && \
 fi
 
 
+
 #***************************[multimedia]**************************************
 # 2018 11 30
 
@@ -60,6 +65,7 @@ if [ "${REPO_BASH_MULTIMEDIA[0]}" != "" ] && \
   [ -d "${REPO_BASH_MULTIMEDIA[0]}" ]; then
     . ${REPO_BASH_MULTIMEDIA[0]}bashrc.sh
 fi
+
 
 
 #***************************[file]********************************************
@@ -70,3 +76,9 @@ if [ "${REPO_BASH_FILE[0]}" != "" ] && \
     . ${REPO_BASH_FILE[0]}bashrc.sh
 fi
 
+
+
+#***************************[backwards compatibility]*************************
+# 2021 01 03
+
+. ${MASTER_PATH_SCRIPT}scripts/backward.sh
