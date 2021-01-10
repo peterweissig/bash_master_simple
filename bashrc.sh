@@ -28,11 +28,12 @@ export MASTER_PATH_WORKSPACE="$(realpath "${MASTER_PATH_SCRIPT}../../.." )/"
 
 
 #***************************[repository]**************************************
-# 2018 11 30
+# 2021 01 10
 
 . ${MASTER_PATH_SCRIPT}scripts/repository.sh
 
-if [ -d "${REPO_BASH_REPO[0]}" ]; then
+if [ "${REPO_BASH_REPO[0]}" != "" ] && \
+  [ -d "${REPO_BASH_REPO[0]}" ]; then
     export REPO_PATH_WORKSPACE="${MASTER_PATH_WORKSPACE}"
     . ${REPO_BASH_REPO[0]}bashrc.sh
 fi
@@ -40,9 +41,10 @@ fi
 
 
 #***************************[repo config]*************************************
-# 2018 11 30
+# 2021 01 10
 
-if [ -d "${REPO_BASH_CONFIG[0]}" ]; then
+if [ "${REPO_BASH_CONFIG[0]}" != "" ] && \
+  [ -d "${REPO_BASH_CONFIG[0]}" ]; then
     . ${REPO_BASH_CONFIG[0]}bashrc.sh
 fi
 
